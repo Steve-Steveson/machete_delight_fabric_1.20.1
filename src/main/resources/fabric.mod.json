@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "machete_delight",
+	"version": "${version}",
+	"name": "Machete Delight",
+	"description": "Halfway between a Sword and a Knife, this mod gives you back the Machete that got discontinued when Nether's Delight was replaced with My Nether's Delight.",
+	"authors": [
+		"Steve_Steveson"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/machete_delight/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.steveson.machetedelight.MacheteDelightMod"
+		],
+		"fabric-datagen": [
+			"net.steveson.machetedelight.MacheteDelightDataGenerator"
+		]
+	},
+	"mixins": [
+      "machete_delight.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
