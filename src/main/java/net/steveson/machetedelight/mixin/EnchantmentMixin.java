@@ -12,13 +12,13 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(Enchantment.class)
 public class EnchantmentMixin {
 
-    @Inject(method = "isAcceptableItem", at = @At("RETURN"), cancellable = true)
-    private void isAcceptableItem(ItemStack stack, CallbackInfoReturnable<Boolean> cir) {
-        if (stack.getItem() instanceof MacheteItem) {
-            System.out.println("I am enchanting a machete!");
-            if ((Object)this == EnchantmentsRegistry.BACKSTABBING.get()) {
-                cir.setReturnValue(true);
-            }
-        }
-    }
+//    @Inject(method = "isAcceptableItem", at = @At("HEAD"), cancellable = true)
+//    private void isAccept1ableItem(ItemStack stack, CallbackInfoReturnable<Boolean> cir) {
+//        if (stack.getItem() instanceof MacheteItem) {
+//            System.out.println("I am enchanting a machete!");
+//            if ((Object)this == EnchantmentsRegistry.BACKSTABBING.get()) {
+//                cir.setReturnValue(true);
+//            }
+//        }
+//    }
 }

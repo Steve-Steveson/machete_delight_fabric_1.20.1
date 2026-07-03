@@ -28,7 +28,7 @@ public class ModTags {
         public static final TagKey<Item> FD_KNIFE = baseModTag("tools/knives");
 
 
-        public static final TagKey<Item> STICKS = commonTag("rods/wooden");
+//        public static final TagKey<Item> STICKS = commonTag("rods/wooden");
 
 
 

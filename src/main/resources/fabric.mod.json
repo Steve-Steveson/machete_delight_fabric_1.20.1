@@ -23,7 +23,8 @@
 		]
 	},
 	"mixins": [
-      "machete_delight.mixins.json"
+      "machete_delight.mixins.json",
+      "machete_delight_old_fd.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.19.2",
