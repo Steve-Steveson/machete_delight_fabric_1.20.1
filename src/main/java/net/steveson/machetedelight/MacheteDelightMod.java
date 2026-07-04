@@ -19,23 +19,5 @@ public class MacheteDelightMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
-
-//		if (FabricLoader.getInstance().isModLoaded("farmersdelight")) {
-//			System.out.println("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB");
-//			try {
-//				Class.forName("com.nhoryzon.mc.farmersdelight.enchantment.BackstabbingEnchantment");
-//
-//				LOGGER.info("old Farmer's Delight port found");
-//
-//				Mixins.addConfiguration("machete_delight_old_fd.mixins.json");
-//			}
-//			catch (ClassNotFoundException e) {
-//				LOGGER.info("old Farmer's Delight port not installed");
-//			}
-//
-//
-//
-//		}
-
 	}
 }

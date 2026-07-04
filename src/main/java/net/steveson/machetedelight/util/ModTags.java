@@ -43,7 +43,7 @@ public class ModTags {
         }
 
         private static TagKey<Item> baseModTag(String name) {
-            return TagKey.of(RegistryKeys.ITEM, new Identifier(FarmersDelightMod.MOD_ID, name));
+            return TagKey.of(RegistryKeys.ITEM, new Identifier("farmersdelight", name));
 
         }
     }

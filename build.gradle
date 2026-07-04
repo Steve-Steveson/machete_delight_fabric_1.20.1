@@ -17,6 +17,19 @@ repositories {
 		name = 'Curse Maven'
 		url = "https://www.cursemaven.com"
 	}
+//	maven {
+//		url "https://api.modrinth.com/maven"
+//	}
+//	exclusiveContent {
+//		forRepository {
+//			maven {
+//				url = "https://jitpack.io"
+//			}
+//		}
+//		filter {
+//			includeGroup "com.github.Chocohead"
+//		}
+//	}
 }
 
 fabricApi {
@@ -34,7 +47,25 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
-	modImplementation "curse.maven:farmers-delight-fabric-482834:${project.fd_version}"
+
+
+	modCompileOnly "curse.maven:farmers-delight-fabric-482834:${project.fd_version}"
+//	modImplementation "curse.maven:farmers-delight-fabric-482834:${project.fd_version}"
+
+
+
+//	modImplementation("curse.maven:farmers-delight-refabricated-993166:${project.fdrf_version}") {
+////		exclude(group: "net.fabricmc")
+//	}
+//	modImplementation("com.github.Chocohead:Fabric-ASM:${fabricasm_version}") {
+//		exclude (group: "net.fabricmc.fabric-api")
+//	}
+
+	modCompileOnly "curse.maven:farmers-delight-refabricated-993166:${project.fdrf_version}"
+//	modRuntimeOnly( "curse.maven:farmers-delight-refabricated-993166:${project.fdrf_version}")
+
+//	modImplementation("vectorwing:FarmersDelight:${fdrf_version}") {exclude(group: "net.fabricmc")}
+//	modImplementation "vectorwing:FarmersDelight-Refabricated:${fdrf_version}"
 }
 
 processResources {
