@@ -49,8 +49,8 @@ dependencies {
 
 
 
-	modCompileOnly "curse.maven:farmers-delight-fabric-482834:${project.fd_version}"
-//	modImplementation "curse.maven:farmers-delight-fabric-482834:${project.fd_version}"
+//	modCompileOnly "curse.maven:farmers-delight-fabric-482834:${project.fd_version}"
+	modImplementation "curse.maven:farmers-delight-fabric-482834:${project.fd_version}"
 
 
 
