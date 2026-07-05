@@ -25,24 +25,24 @@ public class MixinConfigPlugin implements IMixinConfigPlugin {
 
     @Override
     public boolean shouldApplyMixin(String s, String s1) {
-        MacheteDelightMod.LOGGER.info("Should I apply old mixins for " + MacheteDelightMod.MOD_ID + "?");
+//        MacheteDelightMod.LOGGER.info("Should I apply old mixins for " + MacheteDelightMod.MOD_ID + "?");
 
         Optional<ModContainer> mod = FabricLoader.getInstance().getModContainer("farmersdelight");
         if (mod.isPresent()) {
-            MacheteDelightMod.LOGGER.info(MacheteDelightMod.MOD_ID + " FOUND a farmersdelight");
+//            MacheteDelightMod.LOGGER.info(MacheteDelightMod.MOD_ID + " FOUND a farmersdelight");
 
             boolean pathPresent = mod.get().findPath("com/nhoryzon/mc/farmersdelight/enchantment/BackstabbingEnchantment.class").isPresent();
             if (pathPresent) {
-                MacheteDelightMod.LOGGER.info("YES");
+//                MacheteDelightMod.LOGGER.info("YES");
                 return true;
             }
         }
 
-        else {
-            MacheteDelightMod.LOGGER.info(MacheteDelightMod.MOD_ID + "could NOT find farmersdelight");
-        }
-
-        MacheteDelightMod.LOGGER.info("NO");
+//        else {
+//            MacheteDelightMod.LOGGER.info(MacheteDelightMod.MOD_ID + "could NOT find farmersdelight");
+//        }
+//
+//        MacheteDelightMod.LOGGER.info("NO");
         return false;
     }
 

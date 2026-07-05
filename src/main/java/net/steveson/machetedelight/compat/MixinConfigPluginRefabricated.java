@@ -24,37 +24,24 @@ public class MixinConfigPluginRefabricated implements IMixinConfigPlugin {
 
     @Override
     public boolean shouldApplyMixin(String s, String s1) {
-        MacheteDelightMod.LOGGER.info("Should I apply refab mixins for " + MacheteDelightMod.MOD_ID + "?");
+//        MacheteDelightMod.LOGGER.info("Should I apply refab mixins for " + MacheteDelightMod.MOD_ID + "?");
 
         Optional<ModContainer> mod = FabricLoader.getInstance().getModContainer("farmersdelight");
         if (mod.isPresent()) {
-            MacheteDelightMod.LOGGER.info(MacheteDelightMod.MOD_ID + " FOUND a farmersdelight");
+//            MacheteDelightMod.LOGGER.info(MacheteDelightMod.MOD_ID + " FOUND a farmersdelight");
 
             boolean pathPresent = mod.get().findPath("vectorwing/farmersdelight/common/item/enchantment/BackstabbingEnchantment.class").isPresent();
             if (pathPresent) {
-                MacheteDelightMod.LOGGER.info("YES");
+//                MacheteDelightMod.LOGGER.info("YES");
                 return true;
             }
         }
 
-//        ClassLoader cl = FabricLoader.class.getClassLoader();
-//
-//        if (FabricLoader.getInstance().isModLoaded("farmersdelight")) {
-//            MacheteDelightMod.LOGGER.info(MacheteDelightMod.MOD_ID + " FOUND a farmersdelight");
+//        else {
+//            MacheteDelightMod.LOGGER.info(MacheteDelightMod.MOD_ID + "could NOT find farmersdelight");
 //        }
-        else {
-            MacheteDelightMod.LOGGER.info(MacheteDelightMod.MOD_ID + "could NOT find farmersdelight");
-        }
 
-//        boolean present =
-//                cl.getResource(
-//                        "vectorwing/farmersdelight/common/item/enchantment/BackstabbingEnchantment.class"
-//                ) != null;
-//        if (present) {
-//            MacheteDelightMod.LOGGER.info("YES");
-//            return true;
-//        }
-        MacheteDelightMod.LOGGER.info("NO");
+//        MacheteDelightMod.LOGGER.info("NO");
         return false;
     }
 

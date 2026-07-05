@@ -23,14 +23,12 @@
 		]
 	},
 	"mixins": [
-      "machete_delight.mixins.json",
       "machete_delight_old_fd.mixins.json",
       "machete_delight_refab_fd.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.19.2",
 		"minecraft": "~1.20.1",
-		"farmersdelight": "*",
 		"java": ">=17",
 		"fabric-api": "*"
 	}
